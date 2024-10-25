@@ -17,38 +17,54 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kw4-Wf-YZS">
-                                <rect key="frame" x="149" y="757" width="95" height="41"/>
+                                <rect key="frame" x="137.66666666666666" y="469" width="117.66666666666666" height="41"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Schedule"/>
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Whp-r9-KzG"/>
+                                </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="hGh-Ky-Mo7">
-                                <rect key="frame" x="20" y="318" width="353" height="216"/>
-                            </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kk-5X-yMm">
-                                <rect key="frame" x="20" y="123" width="353" height="28"/>
+                                <rect key="frame" x="20" y="229" width="353" height="220"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="vby-uO-DlO"/>
+                                    <constraint firstAttribute="height" constant="220" id="kr7-Hk-Mxf"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </datePicker>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G60-yb-6Le">
+                                <rect key="frame" x="39.333333333333343" y="103" width="314.33333333333326" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vuf-JA-U1L">
+                                <rect key="frame" x="39.333333333333343" y="175" width="314.33333333333326" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Kw4-Wf-YZS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2pU-eL-YC4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hGh-Ky-Mo7" secondAttribute="trailing" constant="20" id="2ws-C2-P95"/>
-                            <constraint firstItem="hGh-Ky-Mo7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5YT-F9-xLt"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2kk-5X-yMm" secondAttribute="trailing" constant="20" id="AQ6-Sa-Xai"/>
-                            <constraint firstItem="hGh-Ky-Mo7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bC2-dN-CC4"/>
-                            <constraint firstItem="2kk-5X-yMm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="cbi-hj-Pi7"/>
-                            <constraint firstItem="hGh-Ky-Mo7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dOn-4d-iZf"/>
-                            <constraint firstItem="2kk-5X-yMm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eLq-yi-6FB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kw4-Wf-YZS" secondAttribute="bottom" constant="20" id="gik-70-8Uv"/>
+                            <constraint firstItem="vuf-JA-U1L" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2i4-EA-2qS"/>
+                            <constraint firstItem="vuf-JA-U1L" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="72Z-Wa-Taz"/>
+                            <constraint firstItem="G60-yb-6Le" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7bv-Fy-4Lc"/>
+                            <constraint firstItem="G60-yb-6Le" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7mw-Sf-Eu9"/>
+                            <constraint firstItem="hGh-Ky-Mo7" firstAttribute="top" secondItem="vuf-JA-U1L" secondAttribute="bottom" constant="20" id="Fan-1R-afC"/>
+                            <constraint firstItem="Kw4-Wf-YZS" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.3" id="Go7-jR-umt"/>
+                            <constraint firstItem="hGh-Ky-Mo7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PQy-ac-zwA"/>
+                            <constraint firstItem="Kw4-Wf-YZS" firstAttribute="top" secondItem="hGh-Ky-Mo7" secondAttribute="bottom" constant="20" id="TCH-aP-WEv"/>
+                            <constraint firstItem="vuf-JA-U1L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="72" id="TdF-VZ-uFd"/>
+                            <constraint firstItem="Kw4-Wf-YZS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Wau-Tf-0Sc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hGh-Ky-Mo7" secondAttribute="trailing" constant="20" id="YMp-RG-in2"/>
+                            <constraint firstItem="G60-yb-6Le" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="fYx-es-sed"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ymO-8H-2Wh"/>
+                    <connections>
+                        <outlet property="addButton" destination="Kw4-Wf-YZS" id="sKI-tT-Bj3"/>
+                        <outlet property="datePicker" destination="hGh-Ky-Mo7" id="Sxi-wC-dyl"/>
+                        <outlet property="descriptionTextField" destination="vuf-JA-U1L" id="KPx-WU-SCg"/>
+                        <outlet property="nameTextField" destination="G60-yb-6Le" id="VO6-sS-gGs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
